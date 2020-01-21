@@ -24,4 +24,12 @@ public interface FavoriteService {
      * @return
      */
     List<Map> selectAllFavorite();
+
+    /**
+     * 分页
+     * @param currentPage
+     * @param count
+     * @return
+     */
+    List<Favorite> selectFavoriteByPage(int currentPage, int count);
 }

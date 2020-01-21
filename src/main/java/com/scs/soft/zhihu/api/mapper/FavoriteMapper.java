@@ -43,4 +43,13 @@ public interface FavoriteMapper {
             @Result(property = "commentCount",column = "comment_count",javaType = Integer.class)
     })
     List<Map> selectAllFavorite();
+
+    /**
+     *
+     * @param dealCount
+     * @param count
+     * @return
+     */
+    @Select("SELECT id , title ,creator_name, creator_avatar ,followers ,total_count ,question_title ,answer_author_name ,answer_content ,voteup_count, comment_count FROM t_favorite ORDER BY id LIMIT #{dealCount} , #{count}")
+    List<Favorite> selectByPage(int dealCount, int count);
 }
