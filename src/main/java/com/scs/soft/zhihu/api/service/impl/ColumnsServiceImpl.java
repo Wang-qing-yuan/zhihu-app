@@ -30,4 +30,10 @@ public class ColumnsServiceImpl implements ColumnsService {
     public List<Map> selectAllColumns() {
         return columnsMapper.selectAllColumns();
     }
+
+    @Override
+    public List<Columns> selectColumnsByPage(int currentPage, int count) {
+        int dealCount = (currentPage -1) * count;
+        return columnsMapper.selectByPage(dealCount,count);
+    }
 }

@@ -24,4 +24,12 @@ public interface ColumnsService {
      * @return
      */
     List<Map> selectAllColumns();
+
+    /**
+     *
+     * @param currentPage
+     * @param count
+     * @return
+     */
+    List<Columns> selectColumnsByPage(int currentPage, int count);
 }

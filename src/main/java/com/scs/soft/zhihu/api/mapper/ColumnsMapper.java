@@ -34,4 +34,7 @@ public interface ColumnsMapper {
             @Result(property = "articlesCount",column = "articles_count",javaType = Integer.class)
     })
     List<Map> selectAllColumns();
+
+    @Select("SELECT id , title , description , url , image_url , followers ,articles_count FROM t_columns ORDER BY id LIMIT #{dealCount} , #{count}")
+    List<Columns> selectByPage(int dealCount, int count);
 }

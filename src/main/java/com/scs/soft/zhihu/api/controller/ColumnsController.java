@@ -3,6 +3,7 @@ package com.scs.soft.zhihu.api.controller;
 import com.scs.soft.zhihu.api.common.Result;
 import com.scs.soft.zhihu.api.service.ColumnsService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,5 +30,10 @@ public class ColumnsController {
     @GetMapping(value = "/all")
     public Result getAllColumns(){
         return Result.success(columnsService.selectAllColumns());
+    }
+
+    @PostMapping(value = "page")
+    public Result getByPage(int currentPage,int count){
+        return Result.success(columnsService.selectColumnsByPage(currentPage,count));
     }
 }
