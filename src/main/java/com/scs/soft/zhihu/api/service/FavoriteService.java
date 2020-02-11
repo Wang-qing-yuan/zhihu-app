@@ -1,6 +1,6 @@
 package com.scs.soft.zhihu.api.service;
 
-import com.scs.soft.zhihu.api.entity.Favorite;
+import com.scs.soft.zhihu.api.domain.entity.Favorite;
 
 import java.util.List;
 import java.util.Map;

@@ -1,6 +1,6 @@
 package com.scs.soft.zhihu.api.service.impl;
 
-import com.scs.soft.zhihu.api.entity.Favorite;
+import com.scs.soft.zhihu.api.domain.entity.Favorite;
 import com.scs.soft.zhihu.api.mapper.FavoriteMapper;
 import com.scs.soft.zhihu.api.service.FavoriteService;
 import org.springframework.stereotype.Service;

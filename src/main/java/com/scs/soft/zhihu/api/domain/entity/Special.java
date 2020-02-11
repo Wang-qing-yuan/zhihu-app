@@ -1,4 +1,4 @@
-package com.scs.soft.zhihu.api.entity;
+package com.scs.soft.zhihu.api.domain.entity;
 
 import lombok.Builder;
 import lombok.Data;

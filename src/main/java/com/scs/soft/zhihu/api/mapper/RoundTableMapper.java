@@ -1,6 +1,6 @@
 package com.scs.soft.zhihu.api.mapper;
 
-import com.scs.soft.zhihu.api.entity.RoundTable;
+import com.scs.soft.zhihu.api.domain.entity.RoundTable;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
